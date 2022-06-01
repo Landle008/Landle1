@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/description_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_id"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:hint="Description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    <EditText
+        android:id="@+id/date_text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_id"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:hint="date"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/time_text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_id"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:hint="time"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+
+
+
+
+    <Button
+        android:id="@+id/bot_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/time_text"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="20dp"
+        android:text="Bot"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/titletextname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title_id"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Title"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/descriptiontextname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_id"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:paddingTop="10dp"
+        android:text="Description"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_text"
+        android:layout_marginTop="20dp"
+        android:text="Add Task"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+</RelativeLayout>
